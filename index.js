@@ -51,7 +51,7 @@ app.get('/api/students', studentController.allStudents);
 //Ruta para ver Student por Id.
 app.get('/api/students/:studentId', studentController.studentsById);
 //Ruta para CREAR new student
-app.post('/api/student/create', studentController.create);
+app.post('/api/students', studentController.create);
 //Ruta para editar un student
 app.put('/api/students/:studentId', validatingToken,  studentController.update);
 //Ruta para delete un usuario
@@ -64,7 +64,7 @@ app.get('/api/teachers', teacherController.allTeachers);
 //Ruta para ver teacher por Id.
 app.get('/api/teachers/:teacherId', teacherController.teachersById);
 //Ruta para CREAR new teacher
-app.post('/api/teacher/create', teacherController.create);
+app.post('/api/teachers', teacherController.create);
 //Ruta para editar un teacher
 app.put('/api/teachers/:teacherId', teacherController.update);
 //Ruta para delete un usuario
@@ -77,7 +77,7 @@ app.get('/api/subjects', subjectController.allSubjects);
 //Ruta para ver subject por Id.
 app.get('/api/subjects/:subjectId/', subjectController.subjectsById);
 //Ruta para CREAR new subject
-app.post('/api/subject/create', subjectController.create);
+app.post('/api/subjects', subjectController.create);
 //Ruta para editar un subject
 app.put('/api/subjects/:subjectId', subjectController.update);
 //Ruta para delete un subject
@@ -89,7 +89,7 @@ app.get('/api/classes', classController.allClasses);
 //Ruta para ver subject por Id.
 app.get('/api/classes/:classId/', classController.classesById);
 //Ruta para CREAR new subject
-app.post('/api/class/create', classController.create);
+app.post('/api/classes', classController.create);
 //Ruta para editar un subject
 app.put('/api/classes/:classId', classController.update);
 //Ruta para delete un subject
